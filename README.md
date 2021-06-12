@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check out code
-      uses: actions/checkout@production
+      uses: actions/checkout@main
     - name: Deploy to Firebase
       uses: ivoilic/deploy-firebase-functions-storage-firestore@v1.0.1
       env:
