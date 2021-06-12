@@ -21,7 +21,7 @@ jobs:
     - name: Check out code
       uses: actions/checkout@production
     - name: Deploy to Firebase
-      uses: ivoilic/deploy-firebase-functions@v1.0.1
+      uses: ivoilic/deploy-firebase-functions-storage-firestore@v1.0.1
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
 ```
