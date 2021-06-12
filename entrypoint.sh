@@ -7,4 +7,4 @@ fi
 
 firebase deploy \
     --token ${FIREBASE_TOKEN} \
-    --only functions
+    --only functions,firestore,storage
