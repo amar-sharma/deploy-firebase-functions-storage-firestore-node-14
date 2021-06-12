@@ -1,4 +1,4 @@
-name: 'Deploy Firebase Functions + Storage + Firestore'
+name: 'Deploy Firebase - Functions + Storage + Firestore'
 author: 'Ivo Ilic <admin@ivoilic.com>'
 description: 'A GitHub Action to deploy to Firebase Functions, Storage, and Firestore'
 runs:
