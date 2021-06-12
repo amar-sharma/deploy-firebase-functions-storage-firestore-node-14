@@ -1,6 +1,6 @@
-# Deploy to Firebase Functions
+# Deploy Firebase Functions + Storage + Firestore
 
-A GitHub Action to deploy to Firebase Functions
+A GitHub Action to deploy to Firebase Functions, Storage, and Firestore
 
 - Make sure you have the `firebase.json` file in the repository
 - Get the Firebase token by running `firebase login:ci` and [store it](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) as the `FIREBASE_TOKEN` secret
@@ -19,9 +19,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check out code
-      uses: actions/checkout@master
+      uses: actions/checkout@production
     - name: Deploy to Firebase
-      uses: BIGG-Kaymo/deploy-firebase-functions@v1.0.1
+      uses: ivoilic/deploy-firebase-functions@v1.0.1
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
 ```
