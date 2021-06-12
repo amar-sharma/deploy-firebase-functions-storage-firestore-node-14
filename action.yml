@@ -1,9 +1,9 @@
-name: 'Deploy to Firebase Functions'
-author: 'Adu Williams <aduwillie@gmail.com>'
-description: 'A GitHub Action to deploy to Firebase Functions'
+name: 'Deploy Firebase Functions + Storage + Firestore'
+author: 'Ivo Ilic <admin@ivoilic.com>'
+description: 'A GitHub Action to deploy to Firebase Functions, Storage, and Firestore'
 runs:
   using: 'docker'
   image: 'Dockerfile'
 branding:
   icon: 'cloud'
-  color: 'red'
+  color: 'yellow'
