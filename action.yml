@@ -1,5 +1,5 @@
 name: 'Deploy Firebase - Functions + Storage + Firestore with yarn'
-author: 'Ivo Ilic <admin@ivoilic.com>'
+author: 'Amar Sharma <amarsharma.hacker@gmail.com>'
 description: 'A GitHub Action to deploy to Firebase Functions, Storage, and Firestore'
 runs:
   using: 'docker'
