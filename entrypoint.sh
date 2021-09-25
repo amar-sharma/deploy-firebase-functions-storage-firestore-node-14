@@ -1,6 +1,8 @@
 #!/bin/sh
 set -x
 
+export TERM=dumb
+
 if [ -z "${FIREBASE_TOKEN}" ]; then
     echo "FIREBASE_TOKEN is missing"
     exit 1
