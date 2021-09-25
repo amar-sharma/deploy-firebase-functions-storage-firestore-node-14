@@ -1,4 +1,4 @@
-# Deploy Firebase Functions + Storage + Firestore
+# Deploy to Firebase
 
 A GitHub Action to deploy to Firebase Functions, Storage, and Firestore
 
@@ -21,7 +21,9 @@ jobs:
     - name: Check out code
       uses: actions/checkout@main
     - name: Deploy to Firebase
-      uses: ivoilic/deploy-firebase-functions-storage-firestore@v1.0
+      uses: amar-sharma/deploy-firebase-github-ci@latest
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        FIREBASE_PROJECT: 'YOUR_FIREBASE_PROJECT'
+        FIREBASE_OPTIONS: '--only functions // Any command that needs to be passed to firebase deploy'
 ```
