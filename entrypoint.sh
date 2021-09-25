@@ -6,6 +6,4 @@ if [ -z "${FIREBASE_TOKEN}" ]; then
 fi
 cd functions && yarn
 firebase --token ${FIREBASE_TOKEN} use ${FIREBASE_PROJECT}
-firebase deploy \
-    --token ${FIREBASE_TOKEN} \
-    --only functions,firestore,storage
+firebase deploy --token ${FIREBASE_TOKEN} ${FIREBASE_OPTIONS}
