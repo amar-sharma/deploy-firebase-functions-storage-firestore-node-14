@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t ivoilic/deploy-firebase-functions-storage-firestore .
+docker build -t  amar-sharma/deploy-firebase-functions-storage-firestore-node-14 .
